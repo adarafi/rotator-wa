@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mengalihkan...</title>
+    <script type="text/javascript">
+        // --- PENGATURAN ---
+        // Masukkan semua link WhatsApp Anda di bawah ini,
+        // pisahkan dengan koma.
+        const wa_links = [
+            "https://wa.me/6281412253024?text=Halo%20Cici",
+            "https://wa.me/62895422233668?text=Halo%20Rasyid",
+            "https://wa.me/62895701802626?text=Halo%20Surya",
+            "https://wa.me/628815075730?text=Halo%20Febri",
+            "https://wa.me/6282137373901?text=Halo%20Zacky"
+        ];
+        // --- AKHIR PENGATURAN ---
+
+        // Kode di bawah ini jangan diubah
+        function redirectToWhatsApp() {
+            const randomIndex = Math.floor(Math.random() * wa_links.length);
+            const randomLink = wa_links[randomIndex];
+            window.location.href = randomLink;
+        }
+
+        // Jalankan fungsi redirect saat halaman dimuat
+        redirectToWhatsApp();
+    </script>
+</head>
+<body>
+    <p>Sedang mengalihkan Anda ke WhatsApp Customer Service kami...</p>
+</body>
+</html>
